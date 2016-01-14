@@ -1,0 +1,16 @@
+{
+  "apps": [{
+    "name": "vee-blog",
+    "script": "www/production.js",
+    "cwd": "/home/sinalvee/github//home/sinalvee/github/vee-blog",
+    "exec_mode": "cluster",
+    "instances": 0,
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      
+    }
+  }]
+}
