@@ -107,3 +107,17 @@ a {
   margin: 30px 0;
   color: rgba(0, 0, 0, 0.87)
 }
+.init {
+  margin: 100px auto;
+  padding: 40px;
+  max-width: 400px;
+  border: 1px solid #dae1e3;
+  background: #f8fbfd;
+  border-radius: 5px;
+  text-align: left;
+}
+.btn-blue {
+  border-color: #308ddf;
+  background: #5ba4e5;
+  color: #fff;
+}

@@ -12,4 +12,12 @@ export default class extends think.logic.base {
   indexAction(){
    
   }
+  
+  initAction() {
+    let rules = {
+      email: "required",
+      name: "required",
+      password: "required"
+    };
+  }
 }
