@@ -4,8 +4,8 @@
  * session configs
  */
 export default {
-  name: 'thinkjs',
-  type: 'file',
+  name: 'vee-blog',
+  type: 'db',
   secret: '@Z#H76XI',
   timeout: 24 * 3600,
   cookie: { // cookie options
