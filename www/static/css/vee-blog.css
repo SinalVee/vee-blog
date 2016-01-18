@@ -1,0 +1,109 @@
+body {
+  color: #505050;
+  line-height: 1.75em;
+  background: #ebebeb;
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+}
+a {
+  color: #f4645f;
+  outline: none;
+}
+.header-header {
+  text-align: center;
+  padding: 40px 0 20px 0;
+  background-image: url(http://image.golaravel.com/5/c9/44e1c4e50d55159c65da6a41bc07e.jpg);
+}
+.header-header img {
+  border-radius: 50%;
+}
+.header-header h1 {
+  color: #fff;
+  font-size: 3em;
+}
+.header-header h4 {
+  color: #fff;
+  margin-top: 20px;
+}
+.header-nav {
+  text-align: center;
+  background: #ffffff;
+  border-top: 1px solid #ebebeb;
+  margin-bottom: 35px;
+  border-bottom: 2px solid #e1e1e1;
+}
+.navbar-header {
+  text-align: center;
+}
+.navbar-header i {
+  height: 56px;
+  line-height: 56px;
+  font-size: 2em;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .nav-toggle-button {
+    display: none;
+  }
+}
+.header-nav .menu {
+  padding: 0;
+  margin: 0;
+}
+.header-nav .menu li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+.header-nav .menu li a {
+  color: #505050;
+  line-height: 4em;
+  display: block;
+  padding: 0 21px;
+}
+.sidebar .widget {
+  background: #ffffff;
+  padding: 21px 30px;
+}
+.widget {
+  margin-bottom: 35px;
+}
+.widget .title {
+  margin-top: 0;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 21px;
+  position: relative;
+}
+.widget .title:after {
+  content: "";
+  width: 128px;
+  height: 1px;
+  background: #f4645f;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+.post {
+  padding: 35px;
+  background: #ffffff;
+  margin-bottom: 35px;
+  position: relative;
+  overflow: hidden;
+}
+.post .post-head {
+  text-align: center;
+}
+.post .post-head .post-title {
+  margin: 0;
+  font-size: 2.0em;
+  line-height: 1.2em;
+}
+.post .post-head .post-meta {
+  color: #959595;
+  margin: 14px 0 0px;
+}
+.post .post-content {
+  margin: 30px 0;
+  color: rgba(0, 0, 0, 0.87)
+}
