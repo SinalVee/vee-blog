@@ -3,14 +3,11 @@
  * db config
  * @type {Object}
  * 
- * prefix set in mongo does't success, so set in root, waiting fix
- * 
  */
 export default {
   type: 'mongo',
   log_sql: true,
   log_connect: true,
-  prefix: '',
   adapter: {
     mysql: {
       host: '127.0.0.1',
