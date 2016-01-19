@@ -9,7 +9,7 @@ export default class extends think.model.mongo {
     this.schema = {
       email: {
         type: 'string',
-        required: 'true'
+        required: true
       },
       name: {
         type: 'string'

@@ -1,0 +1,14 @@
+<%include ../inc/header.html%>
+<div class="post new-post">
+  <form id="new-post" method="post" action="/post">
+    <label for="title" class="sr-only">标题</label>
+    <input type="text" class="form-control" id="title" name="title" placeholder="标题">
+    <div class="markdown-editor">
+      <textarea autofocus="" class="col-md-12" id="content" name="content" rows="1"></textarea>
+      <div class="editor_buttons">
+        <input type="submit" class=" btn btn-blue" data-loading-text="提交中" value="提交">
+      </div>
+    </div>
+  </form>
+</div>
+<%include ../inc/footer.html%>

@@ -101,7 +101,11 @@ a {
 }
 .post .post-head .post-meta {
   color: #959595;
-  margin: 14px 0 0px;
+  margin: 14px 0 20px 0;
+}
+.post .post-head .post-meta .post-author {
+  color: #f4645f;
+  margin-right: 5px;
 }
 .post .post-content {
   margin: 30px 0;
@@ -120,4 +124,15 @@ a {
   border-color: #308ddf;
   background: #5ba4e5;
   color: #fff;
+}
+.new-post {
+  padding: 10px;
+}
+.markdown-editor {
+  margin-top: 10px;
+  padding: 0 1px;
+  border-top: 1px solid #ccc;
+}
+.CodeMirror {
+  height: 350px;
 }
