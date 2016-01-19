@@ -10,6 +10,17 @@
       </div>
     </div>
     <div class="post-content"><%-post.content%></div>
+    <%if (user) {%>
+      <div class="post-control pull-right">
+        <a href="/post/edit/<%=post._id%>" class="btn btn-default btn-main">编辑</a>
+        <%if (post.hide) {%>
+          <a href="/post/show/<%=post._id%>" class="btn btn-default btn-main">取消隐藏</a>
+        <%} else {%>
+          <a href="/post/hide/<%=post._id%>" class="btn btn-default btn-main">隐藏</a>
+        <%}%>
+        <a href="/post/delete/<%=post._id%>#" class="btn btn-default btn-main">删除</a>
+      </div>
+    <%}%>
   </article>
 <%});%>
 <%include ../inc/footer.html%>

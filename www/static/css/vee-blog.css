@@ -9,6 +9,16 @@ a {
   color: #f4645f;
   outline: none;
 }
+.btn-main {
+  border: 1px solid #f4645f;
+  background: #f4645f;
+  color: #ffffff;
+}
+.btn-blue {
+  border-color: #308ddf;
+  background: #5ba4e5;
+  color: #fff;
+}
 .header-header {
   text-align: center;
   padding: 40px 0 20px 0;
@@ -119,11 +129,6 @@ a {
   background: #f8fbfd;
   border-radius: 5px;
   text-align: left;
-}
-.btn-blue {
-  border-color: #308ddf;
-  background: #5ba4e5;
-  color: #fff;
 }
 .new-post {
   padding: 10px;

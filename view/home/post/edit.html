@@ -1,10 +1,10 @@
 <%include ../inc/header.html%>
 <div class="post new-post">
-  <form id="new-post" method="post" action="/post">
+  <form id="new-post" method="post" action="/post/edit/<%=post._id%>">
     <label for="title" class="sr-only">标题</label>
-    <input type="text" class="form-control" id="title" name="title" placeholder="标题">
+    <input type="text" class="form-control" id="title" name="title" placeholder="标题" value="<%=post.title%>">
     <div class="markdown-editor">
-      <textarea autofocus="" class="col-md-12" id="content" name="content" rows="1"></textarea>
+      <textarea autofocus="" class="col-md-12" id="content" name="content" rows="1"><%=post.content%></textarea>
       <div class="editor_buttons">
         <input type="submit" class=" btn btn-main" data-loading-text="提交中" value="提交">
       </div>

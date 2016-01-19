@@ -18,7 +18,13 @@ export default class extends Base {
     
     let Post = this.model('post');
     let User = this.model('user');
-    let posts = await Post.order('createdAt DESC').select()
+    let posts;
+    
+    if (!!user) {
+      posts = await Post.order('createdAt DESC').select();
+    } else {
+      posts = await Post.where({hide: false}).order('createdAt DESC').select();
+    }
     
     for (let post of posts) {
       post.content = md.render(post.content);
