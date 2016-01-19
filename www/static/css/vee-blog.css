@@ -107,7 +107,7 @@ a {
   margin: 30px 0;
   color: rgba(0, 0, 0, 0.87)
 }
-.init {
+.init, .login {
   margin: 100px auto;
   padding: 40px;
   max-width: 400px;

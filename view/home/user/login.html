@@ -1,0 +1,24 @@
+<%include ../inc/base-header.html%>
+  <div class="containter">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="login">
+          <%if (typeof error !== 'undefined') {%>
+            <div class="alert alert-danger" role="alert"><%=error%></div>
+          <%}%>
+          <form method="post" action="/login">
+            <div class="email form-group">
+              <label for="email" class="sr-only">Email:</label>
+              <input type="email" id="email" class="form-control" name="email" placeholder="Email">
+            </div>
+            <div class="password form-group">
+              <label for="password" class="sr-only">Password:</label>
+              <input type="password" id="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-block btn-blue">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<%include ../inc/base-footer.html%>

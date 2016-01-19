@@ -10,14 +10,13 @@ export default class extends think.logic.base {
    * @return {} []
    */
   indexAction(){
-   
-  }
-  
-  initAction() {
-    let rules = {
-      email: "required|email",
-      name: "required",
-      password: "required"
-    };
+    if (this.isGet()) {
+      
+    } else {
+      let rules = {
+        email: 'requierd|email',
+        password: 'requierd'
+      };
+    }
   }
 }

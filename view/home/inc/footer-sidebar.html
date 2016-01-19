@@ -7,6 +7,11 @@
       <p>
         <a href="<%=config.site.githubUrl%>" title="Github" target="_blank"><i class="fa fa-github"></i> SinalVee's Github</a>
       </p>
+      <%if (user) {%>
+      <p>
+        <a href="/logout" title="Logout"><i class="fa fa-sign-out"></i> Logout</a>
+      </p>
+      <%}%> 
     </div>
   </div>
   <!-- end widget -->

@@ -7,16 +7,20 @@ export default class extends Base {
    * index action
    * @return {Promise} []
    */
-   indexAction(){
+  async indexAction(){
+    let user = await this.session('user');
+    
     this.assign({
-      title: 'Index'
+      title: 'Index',
+      user
     });
+    
     return this.display();
   }
   
   async initAction() {
-    let userModel = this.model('user');
-    let userCount = await userModel.count();
+    let User = this.model('user');
+    let userCount = await User.count();
 
     if (userCount === 0) {
       if (this.isGet()) {
@@ -29,17 +33,18 @@ export default class extends Base {
       
       let email = this.param('email');
       let name = this.param('name');
-      let password = think.md5(this.param('name'));
+      let password = think.md5(this.param('password'));
       
-      let userId = await userModel.add({
+      let userId = await User.add({
         email,
         name,
         password
       });
-      let user = await userModel.where({
-        _id: userId
+     
+      let user = await User.where({
+        _id: userId.toString()
       }).find();
-
+      
       await this.session('user', user);
       
       return this.redirect('/');
