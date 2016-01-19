@@ -101,19 +101,19 @@ a {
   position: relative;
   overflow: hidden;
 }
-.post .post-head {
+.post .post-header {
   text-align: center;
 }
-.post .post-head .post-title {
+.post .post-header .post-title {
   margin: 0;
   font-size: 2.0em;
   line-height: 1.2em;
 }
-.post .post-head .post-meta {
+.post .post-header .post-meta {
   color: #959595;
   margin: 14px 0 20px 0;
 }
-.post .post-head .post-meta .post-author {
+.post .post-header .post-meta .post-author {
   color: #f4645f;
   margin-right: 5px;
 }

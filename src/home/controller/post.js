@@ -7,7 +7,7 @@ export default class extends Base {
    * index action
    * @return {Promise} []
    */
-  async indexAction(){
+  async addAction(){
     // if GET
     if (this.isGet()) {
       this.assign({

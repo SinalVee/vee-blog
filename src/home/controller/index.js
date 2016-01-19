@@ -27,7 +27,9 @@ export default class extends Base {
     }
     
     for (let post of posts) {
-      post.content = md.render(post.content);
+      let contents = post.content.split('\r\n');
+      let content = contents.slice(0, 3).join('\r\n') + '  \r\n...';
+      post.content = md.render(content);
       post.time = moment(post.createdAt).calendar();
       let author = await User.where({_id: post.authorId}).find();
       post.author = author.name;
