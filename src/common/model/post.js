@@ -21,11 +21,15 @@ export default class extends think.model.mongo {
       },
       viewCount: {
         type: 'integer',
-        default: 0
+        default: () => {
+          return 0;
+        }
       },
       hide: {
         type: 'boolean',
-        default: false
+        default: () => {
+          return false;
+        }
       },
       createdAt: {
         type: 'date',
