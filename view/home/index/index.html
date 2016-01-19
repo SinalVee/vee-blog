@@ -1,2 +1,15 @@
 <%include ../inc/header.html%>
+<%posts.forEach(function(post) {%>
+  <article id="<%=post._id%>" class="post">
+    <div class="post-head">
+      <h1 class="post-title"><%=post.title%></h1>
+      <div class="post-meta">
+        <span>作者：</span>
+        <span class="post-author"><%=post.author%></span>
+        <span>发布时间：<%=post.time%></span>
+      </div>
+    </div>
+    <div class="post-content"><%-post.content%></div>
+  </article>
+<%});%>
 <%include ../inc/footer.html%>

@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "babel-runtime": "6.x.x",
+    "markdown-it": "^5.1.0",
+    "moment": "^2.11.1",
     "mongodb": "^2.0.48",
     "thinkjs": "2.1.x"
   },
