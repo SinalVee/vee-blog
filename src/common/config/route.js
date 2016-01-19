@@ -5,5 +5,6 @@ export default [
   ['post/edit/:id','home/post/edit'],
   ['post/hide/:id','home/post/hide'],
   ['post/show/:id','home/post/show'],
-  ['post/delete/:id','home/post/delete']
+  ['post/delete/:id','home/post/delete'],
+  ['post/view/:id', 'home/post/view']
 ];

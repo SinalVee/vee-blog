@@ -1,5 +1,9 @@
 'use strict';
 
+import MarkdownIt from 'markdown-it';
+import moment from 'moment';
+moment.locale('zh-cn');
+
 import Base from './base.js';
 
 export default class extends Base {
@@ -32,6 +36,29 @@ export default class extends Base {
     });
     
     return this.redirect('/');
+  }
+  
+  async viewAction() {
+    let md = MarkdownIt();
+    let Post = this.model('post');
+    let User = this.model('user');
+    
+    let postId = this.param('id');
+    
+    await Post.updateViewCount(postId);
+    let post = await Post.where({_id: postId}).find();
+    let author = await User.where({_id: post.authorId}).find();
+    
+    post.author = author.name;
+    post.content = md.render(post.content);
+    post.time = moment(post.createdAt).calendar();
+    
+    this.assign({
+      title: post.title,
+      post
+    });
+    
+    return this.display();
   }
   
   async editAction() {

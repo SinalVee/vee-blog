@@ -46,4 +46,8 @@ export default class extends think.model.mongo {
       createdAt: -1
     };
   }
+  
+  updateViewCount(id) {
+    return this.where({_id: id}).increment('viewCount', 1);
+  }
 }
